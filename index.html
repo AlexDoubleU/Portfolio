@@ -11,7 +11,7 @@
   <title>Alex Wilson - Game Design Portfolio</title>
 </head>
 <body id="fadein">
-  <a name="top" style="padding-top: 10000px;"></a>
+  <a id="top" style="padding-top: 10000px;"></a>
   <header>
     <nav>
       <div id="mainNav">
@@ -28,22 +28,57 @@
       <input type="checkbox" id="showblock"/>
       <div id="hamburgerLinks">
         <ul>
-          <li><a id="subAbout" href="#about">About</a></li>
-          <li><a id="subProject" href="#projects">Projects</a></li>
-          <li><a id="subPersonal" href="#personal">Personal Work</a></li>
-          <li><a id="subContact" href="#contact">Contact</a></li>
-          <li><a id="subResume" target="_blank" href="#">Résumé</a></li>
+          <li><a id="subAbout" href="#about" onclick="closeMenu()">About</a></li>
+          <li><a id="subProject" href="#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a id="subPersonal" href="#personal" onclick="closeMenu()">Personal Work</a></li>
+          <li><a id="subContact" href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li><a id="subResume" target="_blank" href="#" onclick="closeMenu()">Résumé</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <div id="page-container">
     <div id="page">
+
+      <!-- Slideshow container -->
+      <div class ="slideshow-container">
+
+        <!-- Slide images, with slide number and text -->
+        <div class="mySlides fade">    
+          <div class="slideNumber">1 / 3</div>          
+          <a href="#"><img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="1" style="width:100%"></a>
+          <div class="slideText">Placeholder Text</div>
+        </div>
+
+        <div class="mySlides fade">    
+          <div class="slideNumber">2 / 3</div>          
+          <a href="#"><img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="2" style="width:100%"></a>
+          <div class="slideText">Placeholder Text</div>
+        </div>
+
+        <div class="mySlides fade">    
+          <div class="slideNumber">3 / 3</div>          
+          <a href="#"><img src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="3" style="width:100%"></a>
+          <div class="slideText">Placeholder Text</div>
+        </div>
+
+        <!-- Next and previous slide buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
       <div class="section">
         <h1><a class="anchor" id="about"></a>About Me</h1>
         <div class="section-description">
           <p>Hi! I'm Alex, currently studying Games Design at Bournemouth University. I am interested in level design and design. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nisl condimentum id venenatis a. Id cursus metus aliquam eleifend mi. Sapien et ligula ullamcorper malesuada proin.</p>
           <p>Aliquet bibendum enim facilisis gravida neque convallis. Eget nullam non nisi est sit amet facilisis. Nisl tincidunt eget nullam non nisi est sit. Turpis in eu mi bibendum neque egestas. Praesent semper feugiat nibh sed pulvinar. Donec enim diam vulputate ut. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero.</p>
+          <p></p>
         </div>
       </div>
       Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nisl condimentum id venenatis a. Id cursus metus aliquam eleifend mi. Sapien et ligula ullamcorper malesuada proin. Ipsum a arcu cursus vitae congue mauris rhoncus aenean. Quis enim lobortis scelerisque fermentum dui faucibus in. Pretium vulputate sapien nec sagittis. Aliquet bibendum enim facilisis gravida neque convallis. Eget nullam non nisi est sit amet facilisis. Nisl tincidunt eget nullam non nisi est sit. Turpis in eu mi bibendum neque egestas. Praesent semper feugiat nibh sed pulvinar. Donec enim diam vulputate ut. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis mattis aliquam faucibus purus in massa.
@@ -62,7 +97,7 @@
       Ligula ullamcorper malesuada proin libero nunc consequat. Massa tincidunt dui ut ornare lectus sit. Convallis aenean et tortor at risus. Duis ultricies lacus sed turpis tincidunt id aliquet risus. Scelerisque varius morbi enim nunc. Orci phasellus egestas tellus rutrum. Vel quam elementum pulvinar etiam non. Sed egestas egestas fringilla phasellus faucibus scelerisque. Rutrum quisque non tellus orci. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Sit amet nisl purus in mollis nunc sed. At auctor urna nunc id cursus metus aliquam eleifend. Ultrices neque ornare aenean euismod.
     
       
-      <h3></a>First</h3>
+      <h3>First</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper posuere enim, euismod rutrum ex lacinia eu. Quisque eu dui ut dui vehicula rhoncus at in tellus. Suspendisse id risus justo. Proin pretium posuere nulla at sollicitudin. Nunc ut metus sed dui volutpat ultrices. Cras aliquet augue a lorem pulvinar, sed mollis sapien aliquam. Donec congue cursus lacus, vitae blandit elit tincidunt vitae. Phasellus venenatis id lectus eu faucibus. Vivamus urna urna, tempus nec vulputate pellentesque, eleifend id libero. Etiam tempus lacus non nulla scelerisque eleifend. Pellentesque dapibus iaculis ligula, eu tincidunt mi varius et. Morbi non dapibus nisl.      </p> 
 
   
