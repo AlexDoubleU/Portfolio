@@ -43,36 +43,38 @@
       <div class ="slideshow-container">
 
         <!-- Slide images, with slide number and text -->
-        <div class="mySlides fade">    
+        <div class="mySlides fade noselect">    
           <div class="slideNumber">1 / 3</div>          
           <a href="#"><img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="1" style="width:100%"></a>
           <div class="slideText">Placeholder Text</div>
         </div>
 
-        <div class="mySlides fade">    
+        <div class="mySlides fade noselect">    
           <div class="slideNumber">2 / 3</div>          
           <a href="#"><img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="2" style="width:100%"></a>
           <div class="slideText">Placeholder Text</div>
         </div>
 
-        <div class="mySlides fade">    
+        <div class="mySlides fade noselect">    
           <div class="slideNumber">3 / 3</div>          
           <a href="#"><img src="https://www.w3schools.com/howto/img_lights_wide.jpg" alt="3" style="width:100%"></a>
           <div class="slideText">Placeholder Text</div>
         </div>
 
         <!-- Next and previous slide buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="noselect">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </div>
 
-      <div style="text-align:center">
+      <div style="text-align:center" class="noselect">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-      <div class="section section-medium">
+      <div class="section section-medium" id="aboutsection">
         <h1><a class="anchor" id="about"></a>About Me</h1>
         <div class="section-description">
           <p>Hi! I'm Alex, currently studying Games Design at Bournemouth University. I am interested in level design and design. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nisl condimentum id venenatis a. Id cursus metus aliquam eleifend mi. Sapien et ligula ullamcorper malesuada proin.</p>
@@ -121,11 +123,30 @@
     </div>
   </div>
 
+  <div class="section section-medium">
+    <h1><a class="anchor" id="contact"></a>Contact</h1>
+    <div class="section-description" style="text-align: center;">
+      <p>If you'd like to get in touch with me, you can contact me via email or LinkedIn.</p>
+    
+      <div class="noselect" style="text-align: center;">
+        <div class="social-links">
+
+            <a id="email" class="social-icon" href="mailto:alexgwilson@hotmail.com" target="_blank">
+              <i class="far fa-envelope"></i>
+            </a>
+
+            <a id="linkedin" class="social-icon" href="https://www.linkedin.com/in/alexgwilson/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="section">
     © 2020 Alex Wilson. All rights reserved.
   </footer>
-
-
   <script src="script.js"></script>
 </body>
 </html>
