@@ -7,7 +7,8 @@
   <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-  
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   <title>Model1 | Alex Wilson - Game Design Portfolio</title>
 </head>
 <body id="fadein">
@@ -20,7 +21,7 @@
           <li><a href="index.html#projects" class="navLink">Projects</a></li>
           <li><a href="index.html#personal" class="navLink">Personal Work</a></li>
           <li><a href="index.html#contact" class="navLink">Contact</a></li>
-          <li><a target="_blank" class="navLink" href="#">Résumé</a></li>
+           <li><a target="_blank" class="navLink" href="#">Résumé</a></li> <!-- fix href to resume -->
         </ul>
       </div>
       <span class="icon"><label for="showblock" class="fas fa-bars"></label></span>
@@ -31,14 +32,23 @@
           <li><a id="subProject" href="#projects" onclick="closeMenu()">Projects</a></li>
           <li><a id="subPersonal" href="#personal" onclick="closeMenu()">Personal Work</a></li>
           <li><a id="subContact" href="#contact" onclick="closeMenu()">Contact</a></li>
-          <li><a id="subResume" target="_blank" href="#" onclick="closeMenu()">Résumé</a></li>
+          <li><a id="subResume" target="_blank" href="#" onclick="closeMenu()">Résumé</a></li> <!-- fix href to resume -->
         </ul>
       </div>
     </nav>
   </header>
   <div id="page-container">
-    <div id="page">   
-
+    <div id="page">
+      <div id="center-container">
+        <div id="model-container">
+          <div id="model-viewer">
+            <model-viewer id="reveal" loading="eager" poster="Images\barrel.png" rotation-per-second="200%" src="Models\barrel.glb" skybox-image="Models\immenstadter_horn_2k.hdr" alt="a 3D model of a barrel" auto-rotate camera-controls></model-viewer>
+          </div>
+          <div id="model-description">
+            <h1>Low-poly Barrel</h1>
+          </div>
+        </div> 
+      </div>  
     </div>
   </div>
 

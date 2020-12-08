@@ -212,7 +212,6 @@ footer {
   background-color: #888;
   font-size: 16px;
   padding: 5px 0px 5px 0px;
-  margin-top: 33px;
 }
 
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
@@ -350,4 +349,53 @@ footer {
 @keyframes fade {
   from {opacity: 0.4}
   to {opacity: 1}
+}
+
+/* MODEL PAGE */
+
+#center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reveal{
+  height: 100%;
+  width: 100%;
+}
+
+#model-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 700px;
+  width: 95%;
+  background-color: grey;
+}
+
+/* hide poster when the model loads */
+
+model-viewer#reveal {
+  --poster-color: transparent;
+}
+
+#model-viewer{
+  height: 100%;
+  width: 70%;
+  float: left;
+}
+
+#model-description{
+  float: right;
+  width: 30%;
+  text-align: center;
+}
+
+#model-description h1{
+  padding: 7px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #model-container{
+    height: 500px;
+  }
 }
