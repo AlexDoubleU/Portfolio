@@ -14,6 +14,9 @@ body {
   background-color: #333;
   color: white;
   line-height: 1.45;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
 }
 
 /* includes the padding in an element's total width and height */
@@ -147,7 +150,7 @@ a.anchor {
 
 /* hide normal nav menu and show hamburger icon, and menu when screen width is 720px or less */
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 740px) {
   .navLink {
     display: none;
   }
@@ -212,7 +215,10 @@ footer {
   background-color: #888;
   font-size: 16px;
   padding: 5px 0px 5px 0px;
+  margin-top: auto; /* keep the footer at the bottom of page if content is too small */
 }
+
+
 
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
 
@@ -415,3 +421,6 @@ model-viewer#reveal {
 
 }
 
+@media only screen and (max-height: 625px) {
+
+}
