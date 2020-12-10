@@ -42,11 +42,16 @@ function draw(ctx) {
 
   ctx.fillStyle = 'grey';
   ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
   ctx.fillStyle = "green"; // grass
   ctx.fillRect(0,460,ctx.canvas.width,20);
+
   ctx.fillStyle = "yellow";
   ctx.fillText(score, 610, 50)
+
   circley = (Math.floor(i/100));
+
+  
   if(circley == 8 && playerx == circlex)
   {
     score = score + 1;
@@ -55,6 +60,7 @@ function draw(ctx) {
     i = 0;
   }
 
+  //if the ball reaches y position 9, reset it back to the top with a random x position
   if(circley == 9)
   {
     circley = 0;
