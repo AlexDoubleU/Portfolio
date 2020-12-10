@@ -150,7 +150,7 @@ a.anchor {
 
 /* hide normal nav menu and show hamburger icon, and menu when screen width is 720px or less */
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 876px) {
   .navLink {
     display: none;
   }
@@ -231,6 +231,40 @@ a.anchor {
   padding: 20px;
 }
 
+.gallery-image {
+  position:relative;
+}
+
+.gallery-image img {
+  border-radius: 5px;
+  border: 2px solid #666;
+}
+
+.gallery-image-title-container {
+  position: absolute;
+  bottom: 5px;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+}
+
+.gallery-image-title {
+  text-align: center;
+  font-size: 200%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.gallery-description {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
 
 footer {
   background-color: #555;
