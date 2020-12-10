@@ -179,14 +179,20 @@ a.anchor {
 
 .section-medium {
   background-color: #212529;
-}
-
-#aboutsection {
   padding-bottom: 5px;
 }
 
+.section-medium .section-description {
+  text-align: justify;
+}
+
 .section-small {
-  background-color: #222;
+  background-color: #404040;
+  padding-bottom: 1px;
+}
+
+.section-small .section-description {
+  text-align: center;
 }
 
 .section h1 {
