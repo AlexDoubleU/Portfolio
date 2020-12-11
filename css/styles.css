@@ -127,7 +127,7 @@ nav label{
 /* when the checkbox is checked, transition the height to 200px */
 
 #showblock:checked+#hamburgerLinks {
-  height: 200px;
+  height: 162px;
 }
 
 #fadein {
@@ -150,7 +150,7 @@ a.anchor {
 
 /* hide normal nav menu and show hamburger icon, and menu when screen width is 720px or less */
 
-@media only screen and (max-width: 876px) {
+@media only screen and (max-width: 804px) {
   .navLink {
     display: none;
   }
@@ -421,6 +421,16 @@ footer {
   align-items: center;
 }
 
+#center-container h1 {
+  padding: 5px;
+  text-align: center;
+}
+
+#center-container img {
+  height: 400px;
+  width: 400px;
+}
+
 #model{
   height: 100%;
   width: 100%;
@@ -460,6 +470,14 @@ footer {
   padding: 7px;
   width: 70%;
   max-width: 556px;
+}
+
+#project-container {
+  padding: 5px;
+}
+
+#project-image {
+  text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
