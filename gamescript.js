@@ -31,6 +31,7 @@ function main() {
   draw(ctx);
 }
 
+//Set variables
 var playerx = 0;
 var circley = 0;
 var circleyoffset = 20;
@@ -46,12 +47,14 @@ function draw(ctx) {
   ctx.fillStyle = "green"; // grass
   ctx.fillRect(0,460,ctx.canvas.width,20);
 
-  ctx.fillStyle = "yellow";
+  ctx.fillStyle = "yellow"; // score number
   ctx.fillText(score, 610, 50)
 
-  circley = (Math.floor(i/100));
 
+  //i increments every animation frame, circle y will increase everytime 100 increments have passed
+  circley = (Math.floor(i/100));
   
+  //if the ball is at y position 8, while the character and circle x position are the same, increase the score, and reset the ball
   if(circley == 8 && playerx == circlex)
   {
     score = score + 1;
@@ -78,6 +81,7 @@ function draw(ctx) {
   window.requestAnimationFrame(function(){draw(ctx);});
 }
 
+//handles the key inputs, only when the key is released so can't hold down key
 function keydown(event) {
   if(event.key == "ArrowLeft" && playerx != 0)
   {
@@ -88,5 +92,6 @@ function keydown(event) {
     playerx = playerx + 1;
   }
 }
+
 window.onload = main;
 window.addEventListener("keyup", keydown);
