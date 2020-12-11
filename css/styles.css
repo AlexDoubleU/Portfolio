@@ -220,8 +220,8 @@ a.anchor {
 .work-section {
   margin-top: 35px;
   margin-bottom: 35px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -421,7 +421,7 @@ footer {
   align-items: center;
 }
 
-#reveal{
+#model{
   height: 100%;
   width: 100%;
 }
@@ -432,12 +432,6 @@ footer {
   height: 700px;
   width: 95%;
   background-color: grey;
-}
-
-/* hide poster when the model loads */
-
-model-viewer#reveal {
-  --poster-color: transparent;
 }
 
 #model-viewer{
