@@ -238,6 +238,8 @@ a.anchor {
 .gallery-image img {
   border-radius: 5px;
   border: 2px solid #666;
+  width: 344px;
+  height: 354px;
 }
 
 .gallery-image-title-container {
@@ -279,7 +281,6 @@ footer {
 
 #page {
   margin-top: 52.6px;
-  /* margin-top: 100px; */
 }
 
 .social-links {
