@@ -335,7 +335,7 @@ footer {
   margin: auto;
 }
 
-.mySlides {
+.slide-container {
   display: none;
 }
 
@@ -362,7 +362,7 @@ footer {
   background-color: rgba(0,0,0,0.7)
 }
 
-.slideText {
+.slide-description {
   color: #ffffff;
   font-size: 15px;
   position: absolute;
@@ -372,7 +372,7 @@ footer {
   text-align: center;
 }
 
-.slideNumber {
+.slide-number {
   color: #ffffff;
   font-size: 12px;
   position: absolute;
