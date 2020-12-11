@@ -1,10 +1,3 @@
-let page = document.getElementById("fadein");
-function fadeIn(){
-page.classList.toggle('faded');
-}
-
-window.onload = fadeIn;
-
 function closeMenu() {
   document.getElementById("showblock").checked = false;
 }
