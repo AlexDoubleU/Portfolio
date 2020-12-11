@@ -12,6 +12,10 @@ footer {
   text-align: center;
   }
 
+#page-container {
+  display: flex;
+}
+
 #canvas {
   margin: 5px;
   width: 60vw;
@@ -23,4 +27,8 @@ footer {
   background-color: #222;
   display:inline-block;
   margin-bottom: 5px;
+}
+
+#control-container img {
+  width: 100%;
 }
