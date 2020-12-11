@@ -461,6 +461,12 @@ model-viewer#reveal {
   margin-left: 7px
 }
 
+#model-description img {
+  padding: 7px;
+  width: 70%;
+  max-width: 556px;
+}
+
 @media only screen and (max-width: 1200px) {
   #model-container{
     height: 500px;
