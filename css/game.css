@@ -14,4 +14,13 @@ footer {
 
 #canvas {
   margin: 5px;
+  width: 60vw;
+  float:left;
+}
+
+#game-container {
+  padding: 5px;
+  background-color: #777;
+  display:inline-block;
+  margin-bottom: 5px;
 }
