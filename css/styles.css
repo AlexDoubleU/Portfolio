@@ -275,7 +275,11 @@ footer {
   margin-top: auto; /* keep the footer at the bottom of page if content is too small */
 }
 
+/* stop resizing page width at a certain resolution */
 
+#page-container {
+  min-width: 320px;
+}
 
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
 
@@ -340,6 +344,7 @@ footer {
   display: none;
 }
 
+/* previous and next slideshow buttons */
 .next, .prev {
   position: absolute;
   top: 50%;
@@ -381,6 +386,7 @@ footer {
   top: 0;
 }
 
+/* dots under slideshow to mark position */
 .dot {
   cursor: pointer;
   height: 20px;
@@ -397,15 +403,8 @@ footer {
 }
 
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @keyframes fade {
@@ -413,7 +412,7 @@ footer {
   to {opacity: 1}
 }
 
-/* MODEL PAGE */
+/* flex container to center content */
 
 #center-container{
   display: flex;
@@ -424,11 +423,6 @@ footer {
 #center-container h1 {
   padding: 5px;
   text-align: center;
-}
-
-#center-container img {
-  height: 400px;
-  width: 400px;
 }
 
 #model{
@@ -453,6 +447,8 @@ footer {
 #model-description{
   float: right;
   width: 30%;
+  height: 100%;
+  overflow: scroll;
 }
 
 #model-description h1{
@@ -473,13 +469,46 @@ footer {
 }
 
 #project-container {
-  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 120%;
+  max-width: 700px;
+  text-align: justify;
+}
+
+#project-container p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+#project-container ul {
+  padding-left: 0px;
+}
+
+#project-container li {
+  font-weight: bold;
+}
+
+#project-container h3 {
+  font-size: 120%;
+  margin: 0px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-weight: normal;
 }
 
 #project-image {
   text-align: center;
 }
 
+#project-image img{
+  width: 400px;
+  height: 400px;
+}
+
+/* resize model viewer size and font size of description at specific resolution */
 @media only screen and (max-width: 1200px) {
   #model-container{
     height: 500px;
@@ -495,6 +524,3 @@ footer {
 
 }
 
-@media only screen and (max-height: 625px) {
-
-}

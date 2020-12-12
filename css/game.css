@@ -16,6 +16,7 @@ footer {
   display: flex;
 }
 
+/* game canvas */
 #canvas {
   margin: 5px;
   width: 60vw;
