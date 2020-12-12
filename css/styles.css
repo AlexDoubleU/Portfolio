@@ -242,6 +242,20 @@ a.anchor {
   height: 354px;
 }
 
+@media only screen and (max-width: 410px) {
+  .gallery-image img {
+    width: 280px;
+    height: 290px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .gallery-image img {
+    width: 250px;
+    height: 257px;
+  }
+}
+
 .gallery-image-title-container {
   position: absolute;
   bottom: 5px;
@@ -278,7 +292,7 @@ footer {
 /* stop resizing page width at a certain resolution */
 
 #page-container {
-  min-width: 320px;
+  min-width: 300px;
 }
 
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
@@ -507,6 +521,20 @@ footer {
 #project-image img{
   width: 400px;
   height: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  #project-image img {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #project-image img {
+    width: 260px;
+    height: 260px;
+  }
 }
 
 /* resize model viewer size and font size of description at specific resolution */
