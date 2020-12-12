@@ -8,8 +8,8 @@ function load() {
 
   // Set the src (the path of the image). This will be loaded by the
   // browser but may not be loaded immediately
-  playerImage.src = "Images/player.png";
-  circle.src = "Images/redcircle.png";
+  playerImage.src = "images/player.png";
+  circle.src = "images/redcircle.png";
 }
 
 function main() {
