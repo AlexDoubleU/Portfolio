@@ -484,6 +484,7 @@ footer {
 }
 
 #project-container ul {
+  margin: 0px;
   padding-left: 0px;
 }
 
