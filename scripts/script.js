@@ -10,9 +10,9 @@ function showSlide(n) {
   var slides = document.getElementsByClassName("slide-container");
   var dots = document.getElementsByClassName("dot");
   // if the slide to switch to is higher than the number of slides go to first slide
-  if (n > slides.length) {slideIndex = 1}
+  if (n > slides.length) {slideIndex = 1;}
   // if the slide to switch to is less than 1 go to the last slide
-  if (n < 1) {slideIndex = slides.length}
+  if (n < 1) {slideIndex = slides.length;}
   // sets all slides to hidden
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; 

@@ -48,7 +48,7 @@ function draw(ctx) {
   ctx.fillRect(0,460,ctx.canvas.width,20);
 
   ctx.fillStyle = "yellow"; // score number
-  ctx.fillText(score, 610, 50)
+  ctx.fillText(score, 610, 50);
 
 
   //i increments every animation frame, circle y will increase everytime 100 increments have passed
@@ -83,7 +83,7 @@ function draw(ctx) {
 
 //handles the key inputs, only when the key is released so can't hold down key
 function keydown(event) {
-  if(event.key == "ArrowLeft" && playerx != 0)
+  if(event.key == "ArrowLeft" && playerx !== 0)
   {
     playerx = playerx - 1;
   }
