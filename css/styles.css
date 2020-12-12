@@ -444,10 +444,6 @@ footer {
   width: 100%;
 }
 
-model-viewer#reveal {
-  --poster-color: transparent;
-}
-
 #model-container{
   margin-top: 20px;
   margin-bottom: 20px;
