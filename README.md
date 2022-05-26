@@ -1,2 +1,2 @@
 # Portfolio
-A portfolio site for university
+A portfolio site made for university coursework.
