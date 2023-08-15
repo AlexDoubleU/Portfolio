@@ -301,7 +301,6 @@ a.anchor {
 .gallery-contribution {
     text-align: left;
     vertical-align: top;
-    text-wrap: normal;
     word-wrap: break-word;
     font-size: 19px;
 }
@@ -321,6 +320,20 @@ footer {
 
 #page-container {
   min-width: 300px;
+}
+
+/* background image for project pages */
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  background-size: cover;
+}
+
+#project1 {
+  background-image: url("/images/banner_heartforest2.png");
 }
 
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
