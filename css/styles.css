@@ -339,7 +339,7 @@ footer {
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
 
 #page {
-  margin-top: 52.6px;
+  margin-top: 80.6px;
 }
 
 .social-links {
@@ -471,13 +471,22 @@ footer {
 
 #center-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  max-width: 992px;
+  background-color: rgba(46, 52, 58, 0.9);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
 }
 
 #center-container h1 {
   padding: 5px;
   text-align: center;
+  font-size:70px;
+  font-weight: 400;
+}
+
+#project-image-title-container {
+  justify-content: center;
 }
 
 #model{
@@ -529,7 +538,7 @@ footer {
   padding-left: 30px;
   padding-right: 30px;
   font-size: 15px;
-  max-width: 700px;
+  width: 100%;
   text-align: justify;
 }
 
