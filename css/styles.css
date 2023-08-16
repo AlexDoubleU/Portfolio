@@ -627,31 +627,47 @@ footer {
   #model-description p{
     font-size:100%;
   }
+}
 
   /* Accordion for projects pages */
 
   .accordion {
-    background-color:#2e343a;
+    background-color:#555555c5;
     color:white;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    border-radius: 4px;
+    font-size: 19px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  .accordion:after {
+    content: '+';
+    float: right;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  .active:after {
+    content: "\2212";
   }
 
   .active, .accordion:hover {
-    background-color: #ccc;
+    background-color: #757575c5;
   }
 
   .panel {
     padding: 0 18px;
-    background-color: white;
-    display: none;
+    background-color: #00000000;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    border-radius:
   }
-
-}
 
