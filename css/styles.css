@@ -339,6 +339,10 @@ footer {
 /* a margin at the top the same size as the navbar so that nothing hides under the navbar */
 
 #page {
+  margin-top: 52.6px;
+}
+
+#page-project {
   margin-top: 80.6px;
   margin-bottom: 28px;
 }
@@ -479,15 +483,34 @@ footer {
   border-radius: 15px;
 }
 
-#center-container h1 {
+@media only screen and (max-width: 1130px) {
+  #center-container {
+    width: 780px;
+  }
+}
+
+@media only screen and (max-width: 804px) {
+  #center-container {
+    width: 600px;
+  }
+}
+
+#project-title-container h1 {
+  justify-content: center;
+  font-size:70px;
+  font-weight: 400;
   padding: 5px;
   text-align: center;
-  font-size:70px;
+}
+
+
+
+#project-container h1 {
   font-weight: 400;
 }
 
-#project-image-title-container {
-  justify-content: center;
+.fact-cell {
+  padding: 5px;
 }
 
 #model{
@@ -603,6 +626,31 @@ footer {
 
   #model-description p{
     font-size:100%;
+  }
+
+  /* Accordion for projects pages */
+
+  .accordion {
+    background-color:#2e343a;
+    color:white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
   }
 
 }
