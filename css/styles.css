@@ -654,11 +654,11 @@ footer {
     color: #ffffff;
   }
 
-  .active:after {
+  .accactive:after {
     content: "\2212";
   }
 
-  .active, .accordion:hover {
+  .accactive, .accordion:hover {
     background-color: #757575c5;
   }
 
@@ -668,6 +668,5 @@ footer {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    border-radius:
   }
 
