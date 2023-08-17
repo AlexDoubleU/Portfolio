@@ -1,4 +1,3 @@
-<!-- SEARCH "HERE" AND REPLACE -->
 <!DOCTYPE html>
 <html lang="en" id="top">
 <head>
@@ -8,9 +7,7 @@
   <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-  <title>TITLE HERE | Alex Wilson</title>
+  <title>Rewards in Games | Alex Wilson</title>
 </head>
 <body id="fadein">
   <header>
@@ -39,12 +36,12 @@
     </nav>
   </header>
   <div id="page-container">
-    <div class="background-image" id="project1"></div>
+    <div class="background-image" id="proj_reward"></div>
     <div id="page-project">
       <div id="center-container">
         <div id="project-container">
           <div id="project-title-container">         
-            <h1>Project HERE</h1>
+            <h1>Reward Types in Games</h1>
           </div>
           <div id="project-facts">
             <table style="margin: auto; border-spacing: 0px;">
@@ -53,55 +50,103 @@
                   <td class="fact-cell">
                     <strong>Project Type</strong>
                   </td>
-                  <td class="fact-cell">Project Type HERE</td>
+                  <td class="fact-cell">Academic study - University</td>
                 </tr>
                 <tr>
                   <td class="fact-cell">
                     <strong>Duration</strong>
                   </td>
-                  <td class="fact-cell">Duration HERE</td>
+                  <td class="fact-cell">4 Months</td>
                 </tr>
                 <tr>
                   <td class="fact-cell">
                     <strong>Software Used</strong>
                   </td>
-                  <td class="fact-cell">Software HERE</td>
+                  <td class="fact-cell">Unity, SPSS</td>
                 </tr>
                 <tr>
                   <td class="fact-cell">
                     <strong>Languages</strong>
                   </td>
-                  <td class="fact-cell">Language HERE</td>
-                </tr>
-                <tr>
-                  <td class="fact-cell">
-                    <strong>Primary Role</strong>
-                  </td>
-                  <td class="fact-cell">Role HERE</td>
+                  <td class="fact-cell">C#</td>
                 </tr>
               </tbody>
             </table>       
           </div>
 
-          <h1>INTRODUCTION HERE</h1>
-          <p>DESCRIPTION HERE</p>
-          <h3>Skills I worked on from this project:</h3>
-          <ul>
-            <li>SKILL HERE</li>
-            <li>SKILL HERE</li>
-          </ul>
-
-          <button class="accordion">Accordion Title HERE</button>
-          <div class ="panel">
-            <p>Text HERE</p>
+          <h1>About</h1>
+          <p>This study was done as part of my final year project for university. The project was focused on research, design and evaluation as opposed to focusing on the implementation. I decided on this style of project as I wanted to challenge myself with a more academic focused project.</p>
+          <p>The project was aimed at seeing how different player traits, demographics, and overall gaming experience affect how they experience different reward types in video games. I decided on this topic because when I was looking through academic papers I found a gap in knowledge in this topic and factors that affect user experience in games intrigue me.</p>
+          <p>I also created a game as a platform for research investigations into the reward types.</p>
+          <div class="project-image">
+            <img src="images\reward_about.png" style="width:75%;">
           </div>
-          <!-- video template -->
-          <!-- <video autoplay="" muted="" loop="" style="max-width:80%; max-height:80%;">
-            <source src="videolinkHERE">
-          </video> -->
+
+          <button class="accordion">Research</button>
+          <div class ="panel">
+            <p>Research was an integral part of this project as I needed to use previous knowledge in the field. Reading academic papers was new to me so this step was quite hard at first, but in the end I referenced about 30 papers in my dissertation and got quite proficient at understanding and piecing together the literature in a given subject.</p>
+            <p>The topics I looked at were reward classifications, and player classifications. These were important as I needed to know what rewards to include in the game and more ways other than demographics to differentiate players.</p>
+          </div>
+
+          <button class="accordion">Design</button>
+          <div class ="panel">
+            <p>I aimed to create an ecologically valid 2D platformer that represented a variety of reward types commonly seen in games. To maintain accuracy in the results, I decided that the rewards should only be placed on the main path, avoiding additional paths that could bias results.</p>
+            <p>For the level design I created a basic mockup that showed the path of the map, and where enemies and rewards would show up. The level was split up into stages and these stages were split up by the vertical drops in the level that you can see. </p>
+
+            <div class="project-image">
+              <img src="images/reward_level.png" style="width:60%;">
+            </div>
+
+          </div>
+
+          <button class="accordion">Implementation</button>
+          <div class ="panel">
+            <p>Playtesting occurred simultaneously with implementation to refine game elements such as level design and enemy difficulty. I created basic scripts to handle rewards, iterating through multiple playtests to strike the right balance between challenge and reward.</p>
+            <p>I sourced assets online to create a consistent art style, including custom reward icons to match the game's theme. While sound effects were integrated, I didn't get to implementing special effects for the rewards because of time constraints.</p>
+            
+            <div class="project-image">
+              <video autoplay muted loop style="width:70%;">
+                <source src="videos/reward_demovid.mp4">
+              </video>
+            </div>
+            <p>Also it's important to note that the game and the mechanics are simple because the purpose of the game is a platform for research investigations. The game needed to be easy to play and understand for participants. Any extra polish would have returned diminishing returns for the study's success.</p>
+          </div>
+
+          <button class="accordion">Evaluation</button>
+          <div class ="panel">
+            <p>I employed a within-subjects experiment, using an online questionnaire to collect demographic data and assess participant traits. Over a 10-day period, I gathered data from 12 participants.</p>
+            <p>I used multiple regression analyses to examine the direction, significance, and magnitude of relationships between traits and reward preferences.</p>
+          </div>
+
+          <button class="accordion">Results and Conclusion</button>
+          <div class ="panel">
+            <p>Even though there was only one significant relationship observed (players with high goal orientation tended to dislike the weapon upgrade), my study provides an exploratory look into the complex relationship between player traits and reward types. The study faced limitations such as a small and homogenous sample size, and no qualitative data collection. </p>
+            <p>Below are the descriptive statistics of the data I collected.</p>
+            <div class="project-image">
+              <img src="images/reward_stats.png" style="width:50%;">
+            </div>
+            <p>And this shows the coefficients table for the multiple regression analysis where you can see the statistically significant 'Goal' trait, which is being compared to the dependent variable, 'Weapon'.</p>
+            <div class="project-image">
+              <img src="images/reward_weapon.png" style="width:50%;">
+            </div>
+          </div>
+
+          <button class="accordion">Portfolio Reflection</button>
+          <div class ="panel">
+            <p>I'm proud of my research efforts in this project, especially the preliminary research that informed the project's design. While the study had limitations, I recognised areas for improvements, such as refining the study design and the implementation.</p>
+            <p>Taking on the academic aspects of this project was a welcome challenge that helped me develop my critical reflection abilities. This experience played a key role in improving my ability to scrutinise my work, making it a rewarding process of both learning and personal growth.</p>
+          </div>
+
+          <!-- <div class="project-image">
+            <video autoplay muted loop style="width:70%;">
+              <source src="videolinkhere">
+            </video>
+          </div> -->
 
           <!-- img template -->
-          <!-- <img src="imglinkHERE" style="max-width:80%; max-height:80%;"> -->
+     <!-- <div class="project-image">
+            <img src="videolinkhere" style="width:70%;">
+          </div> -->
 
         </div>
       </div>  
