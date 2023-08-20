@@ -463,11 +463,17 @@ footer {
 
 #center-container{
   display: flex;
-  max-width: 992px;
+  max-width: 1200px;
   background-color: rgba(46, 52, 58, 0.9);
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
+}
+
+@media only screen and (max-width: 1347px) {
+  #center-container {
+    width: 980px;
+  }
 }
 
 @media only screen and (max-width: 1130px) {
@@ -501,8 +507,10 @@ footer {
 }
 
 #model{
-  height: 100%;
-  width: 100%;
+
+  width: 60%;
+  margin: auto;
+  padding-bottom: 90%;
 }
 
 #model-container{
@@ -514,8 +522,7 @@ footer {
 }
 
 #model-viewer{
-  height: 100%;
-  width: 70%;
+  width: 100%;
   float: left;
 }
 
@@ -653,8 +660,27 @@ footer {
     padding: 0 18px;
     background-color: #00000000;
     overflow: hidden;
-    max-height: 0;
+    max-height: 0.;
     transition: max-height 0.2s ease-out;
+  }
+
+  /* Youtube Embed */
+  .youtube-embed {
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+    margin-bottom: -20px;
+  }
+
+  .youtube-embed iframe {
+    width: 90%; 
+    height: 90%; 
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
   }
 
   /* Project page */
@@ -677,7 +703,7 @@ footer {
   background-image: url("/images/reward_background.png");
 }
 
-#proj_here {
-  background-image: url("/images/here");
+#proj_heartforest {
+  background-image: url("/images/heartforest_background.jpg");
 }
 
