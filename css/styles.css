@@ -150,7 +150,7 @@ a.anchor {
 
 /* hide normal nav menu and show hamburger icon, and menu when screen width is 720px or less */
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 915px) {
   .navLink {
     display: none;
   }
@@ -482,7 +482,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 915px) {
   #center-container {
     width: 600px;
   }
@@ -660,7 +660,7 @@ footer {
     padding: 0 18px;
     background-color: #00000000;
     overflow: hidden;
-    max-height: 0.;
+    max-height: 0;
     transition: max-height 0.2s ease-out;
   }
 
