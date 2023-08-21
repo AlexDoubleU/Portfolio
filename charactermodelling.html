@@ -1,0 +1,155 @@
+<!-- SEARCH "HERE" AND REPLACE -->
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script> 
+  <title>Character Modelling | Alex Wilson</title>
+</head>
+<body id="fadein">
+  <header>
+    <nav>
+      <!-- Links for the main nav bar -->
+      <div id="mainNav">
+        <ul>
+          <li><a id="navName" href="index.html#top">Alex Wilson</a></li>
+          <li><a href="index.html#about" class="navLink">About</a></li>
+          <li><a href="index.html#projects" class="navLink">Projects</a></li>
+          <li><a href="index.html#contact" class="navLink">Contact</a></li>
+          <li><a href="Alex Wilson CV.pdf" target="_blank" class="navLink">Resume</a></li>
+        </ul>
+      </div>
+      <span class="icon"><label for="showblock" class="fas fa-bars"></label></span>
+      <input type="checkbox" id="showblock"/>
+      <!-- Links for the hamburger menu -->
+      <div id="hamburgerLinks">
+        <ul>
+          <li><a id="subAbout" href="index.html#about" onclick="closeMenu()">About</a></li>
+          <li><a id="subProject" href="index.html#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a id="subContact" href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+          <li><a id="subResume" href="Alex Wilson CV.pdf" target="_blank" onclick="closeMenu()">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="page-container">
+    <div class="background-image" id="proj_charmodel"></div>
+    <div id="page-project">
+      <div id="center-container">
+        <div id="project-container">
+          <div id="project-title-container">         
+            <h1>Character Modelling</h1>
+          </div>
+          <div id="project-facts">
+            <table style="margin: auto; border-spacing: 0px;">
+              <tbody>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Project Type</strong>
+                  </td>
+                  <td class="fact-cell">University Project</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Duration</strong>
+                  </td>
+                  <td class="fact-cell">1 Month</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Software Used</strong>
+                  </td>
+                  <td class="fact-cell">Maya</td>
+                </tr>
+                <tr>
+              </tbody>
+            </table>       
+          </div>
+          
+
+          
+          <h1>About</h1>
+          <p>This was my first attempt at character modelling, and was for my university unit, modelling for animation. We started off by finding reference images for a model, and cleaned the images on photoshop. I'm proud of my work here because I wouldn't consider myself a modeller; despite this, I dedicated extra time to make sure I made something I was happy with.</p>
+          <p>Given additional time to work on the model, my focus would be on optimising polygon count, particularly for the hand. Additionally, I would improve the face, especially the mouth as it doesn't fit the reference well and could potentially look strange when animated. </p>
+          
+          <button class="accordion">References</button>
+          <div class ="panel">
+            <p>Here is the original reference, and the refined version with lines cleaned and arms adjusted into an A pose, improving its suitability for animation.</p>
+          
+            <div class="project-image">
+              <img src="images/char_original.jpg" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/char_adjusted.jpg" style="width:70%;">
+            </div>
+
+          </div>
+
+          <button class="accordion">Model</button>
+          <div class ="panel">
+
+            <div class="project-image">
+              <img src="images/char_front.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/char_frontwire.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/char_side.png" style="width:30%;">
+            </div>
+
+          </div>
+
+
+          <button class="accordion">3D Viewer</button>
+          <div class ="panel">
+          
+            <div id="model-viewer">
+              <model-viewer id="model" loading="eager" rotation-per-second="200%" src="models/woman.glb"  alt="a 3D model of a woman" auto-rotate camera-controls></model-viewer>
+            </div>
+
+          </div>
+
+          <!-- <h3>Skills I worked on from this project:</h3>
+          <ul>
+            <li>SKILL HERE</li>
+            <li>SKILL HERE</li>
+          </ul> -->
+
+          <!-- <button class="accordion">Accordion Title HERE</button>
+          <div class ="panel">
+            <p>Text HERE</p>
+          </div> -->
+
+          <!-- video template -->
+          <!-- <div class="project-image">
+            <video autoplay muted loop style="width:70%;">
+              <source src="videolinkhere">
+            </video>
+          </div> -->
+
+          <!-- img template -->
+     <!-- <div class="project-image">
+            <img src="videolinkhere" style="width:70%;">
+          </div> -->
+
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <footer class="section">
+    © 2023 Alex Wilson. All rights reserved.
+  </footer>
+  <script src="scripts/fade.js"></script>
+  <script src="scripts/accordion.js"></script>
+</body>
+</html>

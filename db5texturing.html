@@ -7,9 +7,8 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script> 
-  <title>Character Modelling | Alex Wilson</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+  <title>Aston Martin DB5 Texturing | Alex Wilson</title>
 </head>
 <body id="fadein">
   <header>
@@ -38,12 +37,12 @@
     </nav>
   </header>
   <div id="page-container">
-    <div class="background-image" id="projectnameHERE"></div>
+    <div class="background-image" id="proj_db5"></div>
     <div id="page-project">
       <div id="center-container">
         <div id="project-container">
           <div id="project-title-container">         
-            <h1>Project HERE</h1>
+            <h1>Aston Martin DB5 Texturing</h1>
           </div>
           <div id="project-facts">
             <table style="margin: auto; border-spacing: 0px;">
@@ -52,52 +51,85 @@
                   <td class="fact-cell">
                     <strong>Project Type</strong>
                   </td>
-                  <td class="fact-cell">Project Type HERE</td>
+                  <td class="fact-cell">University Project</td>
                 </tr>
                 <tr>
                   <td class="fact-cell">
                     <strong>Duration</strong>
                   </td>
-                  <td class="fact-cell">Duration HERE</td>
+                  <td class="fact-cell">1 Month</td>
                 </tr>
                 <tr>
                   <td class="fact-cell">
                     <strong>Software Used</strong>
                   </td>
-                  <td class="fact-cell">Software HERE</td>
-                </tr>
-                <tr>
-                  <td class="fact-cell">
-                    <strong>Languages</strong>
-                  </td>
-                  <td class="fact-cell">Language HERE</td>
-                </tr>
-                <tr>
-                  <td class="fact-cell">
-                    <strong>Primary Role</strong>
-                  </td>
-                  <td class="fact-cell">Role HERE</td>
+                  <td class="fact-cell">Maya, Substance Painter & Designer</td>
                 </tr>
               </tbody>
             </table>       
           </div>
-          
-          <div id="model-viewer">
-            <model-viewer id="model" loading="eager" rotation-per-second="200%" src="models/woman.glb"  alt="a 3D model of a barrel" auto-rotate camera-controls></model-viewer>
-          </div>
-          
-          <h1>INTRODUCTION HERE</h1>
-          <p>DESCRIPTION HERE</p>
-          
-          <!-- <h3>Skills I worked on from this project:</h3>
-          <ul>
-            <li>SKILL HERE</li>
-            <li>SKILL HERE</li>
-          </ul> -->
 
-          <!-- <button class="accordion">Accordion Title HERE</button>
+          <h1>About</h1>
+          <p>For this project we were given a 3D model of an Aston Martin DB5 and we had to prepare the model for texturing, texture it, and light it in a game engine.</p>
+        
+          <div class="project-image">
+            <img src="images/db5_model.png" style="width:70%;">
+          </div>
+
+          <button class="accordion">Preparing</button>
           <div class ="panel">
-            <p>Text HERE</p>
+            <p>Preparing the model for texturing involved fixing any mesh problems, creating the uvs, and setting material ids with colour coding.</p>
+
+            <div class="project-image">
+              <img src="images/db5_colourid.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/db5_uvs.png" style="width:70%;">
+            </div>
+
+          </div>
+
+          <button class="accordion">Texturing</button>
+          <div class ="panel">
+            <p>Texturing involved creating the materials required for the car. I used Substance Designer to create wood, leather and the car paint. I then used Substance Painter to apply the materials to the UVs.</p>
+
+            <div class="project-image">
+              <img src="images/db5_renderfrontside.jpg" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/db5_renderside.jpg" style="width:70%;">
+            </div>
+
+          </div>
+
+          <button class="accordion">Lighting</button>
+          <div class ="panel">
+            <p>Once texturing was done, we had to import it into unreal engine and then properly use lighting to showcase the car.</p>
+
+            <div class="project-image">
+              <img src="images/db5_lit1.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/db5_lit2.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/db5_lit3.png" style="width:70%;">
+            </div>
+
+            <div class="project-image">
+              <img src="images/db5_lit4.png" style="width:70%;">
+            </div>
+
+          </div>
+
+                    <!-- accordion template -->
+          <!-- <button class="accordion">Game Design</button>
+          <div class ="panel">
+
           </div> -->
 
           <!-- video template -->
@@ -110,6 +142,11 @@
           <!-- img template -->
      <!-- <div class="project-image">
             <img src="videolinkhere" style="width:70%;">
+          </div> -->
+
+          <!-- youtube template -->
+          <!-- <div class="youtube-embed">
+            <iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
           </div> -->
 
         </div>
