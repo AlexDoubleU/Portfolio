@@ -3,16 +3,24 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "accactive" class,
-    to highlight the button that controls the panel */
+    var panel = this.nextElementSibling;
+
     this.classList.toggle("accactive");
 
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
+      updateParentHeights(panel, -panel.scrollHeight);
     } else {
-      panel.style.maxHeight = panel.scrollHeight + 99000+ "px";
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      updateParentHeights(panel, panel.scrollHeight);
     }
   });
-} 
+}
+
+function updateParentHeights(panel, change) {
+  var parentPanel = panel.parentElement.closest(".panel");
+  while (parentPanel) {
+    parentPanel.style.maxHeight = parseInt(parentPanel.style.maxHeight) + change + "px";
+    parentPanel = parentPanel.parentElement.closest(".panel");
+  }
+}
