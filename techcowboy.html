@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> 
+  <title>Tech Cowboy | Alex Wilson</title>
+</head>
+<body id="fadein">
+  <header>
+    <nav>
+      <!-- Links for the main nav bar -->
+      <div id="mainNav">
+        <ul>
+          <li><a id="navName" href="index.html#top">Alex Wilson</a></li>
+          <li><a href="index.html#about" class="navLink">About</a></li>
+          <li><a href="index.html#projects" class="navLink">Projects</a></li>
+          <li><a href="index.html#contact" class="navLink">Contact</a></li>
+          <li><a href="Alex Wilson CV.pdf" target="_blank" class="navLink">Resume</a></li>
+        </ul>
+      </div>
+      <span class="icon"><label for="showblock" class="fas fa-bars"></label></span>
+      <input type="checkbox" id="showblock"/>
+      <!-- Links for the hamburger menu -->
+      <div id="hamburgerLinks">
+        <ul>
+          <li><a id="subAbout" href="index.html#about" onclick="closeMenu()">About</a></li>
+          <li><a id="subProject" href="index.html#projects" onclick="closeMenu()">Projects</a></li>
+          <li><a id="subContact" href="index.html#contact" onclick="closeMenu()">Contact</a></li>
+          <li><a id="subResume" href="Alex Wilson CV.pdf" target="_blank" onclick="closeMenu()">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="page-container">
+    <div class="background-image" id="proj_techcowboy"></div>
+    <div id="page-project">
+      <div id="center-container">
+        <div id="project-container">
+          <div id="project-title-container">         
+            <h1>Tech Cowboy</h1>
+          </div>
+          <div id="project-facts">
+            <table style="margin: auto; border-spacing: 0px;">
+              <tbody>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Project Type</strong>
+                  </td>
+                  <td class="fact-cell">Game Jam</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Team Size</strong>
+                  </td>
+                  <td class="fact-cell">2</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Duration</strong>
+                  </td>
+                  <td class="fact-cell">6 days</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Software Used</strong>
+                  </td>
+                  <td class="fact-cell">Unreal Engine 5</td>
+                </tr>
+                <tr>
+                  <td class="fact-cell">
+                    <strong>Primary Role</strong>
+                  </td>
+                  <td class="fact-cell">Designer & Programmer</td>
+                </tr>
+              </tbody>
+            </table>       
+          </div>
+
+          <h1>About</h1>
+          <p>Tech Cowboy is a shooter built in UE5 with a top-down view. It has fast-paced combat featuring waves of enemies, with breaks for upgrading your abilities.</p>
+
+          <p>My role in the project was game designer and programmer. I handled the majority of the game's design and almost all of the programming (95%). </p>
+
+          <p>This was the first game jam that I worked on and I had a lot of fun working through problems and various challenges that came up during development.</p>
+        
+          <div class="youtube-embed">
+            <iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/AnwpBjO0q9s"></iframe>
+          </div>
+
+
+                    <!-- accordion template -->
+          <!-- <button class="accordion">Game Design</button>
+          <div class ="panel">
+
+          </div> -->
+
+          <!-- video template -->
+          <!-- <div class="project-image">
+            <video autoplay muted loop style="width:70%;">
+              <source src="videolinkhere">
+            </video>
+          </div> -->
+
+          <!-- img template -->
+     <!-- <div class="project-image">
+            <img src="videolinkhere" style="width:70%;">
+          </div> -->
+
+          <!-- youtube template -->
+          <!-- <div class="youtube-embed">
+            <iframe frameborder="0" allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          </div> -->
+
+        </div>
+      </div>  
+    </div>
+  </div>
+  
+  <footer class="section">
+    © 2023 Alex Wilson. All rights reserved.
+  </footer>
+  <script src="scripts/fade.js"></script>
+  <script src="scripts/accordion.js"></script>
+</body>
+</html>
