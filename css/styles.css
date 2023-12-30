@@ -496,8 +496,6 @@ footer {
   text-align: center;
 }
 
-
-
 #project-container h1 {
   font-weight: 400;
 }
@@ -565,11 +563,6 @@ footer {
   margin-bottom: 10px;
 }
 
-#project-container ul {
-  margin: 0px;
-  padding-left: 0px;
-  font-size: 19px;
-}
 
 #project-container h3 {
   margin: 0px;
@@ -720,3 +713,19 @@ footer {
 }
 
 
+ul li {
+font-size: 18px;
+padding-top: 3px;
+padding-bottom: 0px;
+}
+
+ul ul li {
+  font-size: 15px;
+  padding-top: 0px;
+  padding-bottom: 2px;
+}
+
+
+.learnings {
+  font-size: 15px;
+}
