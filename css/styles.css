@@ -713,19 +713,19 @@ footer {
 }
 
 
-ul li {
+#project-container ul li {
 font-size: 18px;
 padding-top: 3px;
 padding-bottom: 0px;
 }
 
-ul ul li {
+#project-container ul ul li {
   font-size: 15px;
   padding-top: 0px;
   padding-bottom: 2px;
 }
 
 
-.learnings {
+#project-container .learnings {
   font-size: 15px;
 }
